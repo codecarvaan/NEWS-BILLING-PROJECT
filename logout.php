@@ -1,0 +1,11 @@
+<?php 
+session_start();
+if(empty($_SESSION["employeeid"]))
+{
+header("location:main.php");
+}
+else{
+session_destroy();
+}
+header("location:main.php");
+?>
